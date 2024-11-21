@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 const { bookExists, validateBookData, getFilteredBooks, getBookById, validateGenres, books } = require('./helpers/bookHelpers');
 let { nextId } = require('./helpers/bookHelpers'); 
